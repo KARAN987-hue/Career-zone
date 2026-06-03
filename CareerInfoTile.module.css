@@ -1,0 +1,66 @@
+.box {
+  font-family: 'Open Sans', sans-serif;
+  width: 55%;
+  margin: auto;
+  padding-top: 0px;
+}
+
+.data > div {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.data > div > span {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 24px;
+  display: block;
+}
+
+.data > div > p {
+  font-size: 14px;
+  line-height: 22px;
+  color: #333;
+  margin-top: 4px;
+  display: block;
+}
+
+.headingColor {
+  color: #413f3f;
+}
+
+/* Responsive for tablets and mobile */
+@media (max-width: 1024px) {
+  .box {
+    width: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  .box {
+    width: 90%;
+  }
+
+  .data > div > span {
+    font-size: 14px;
+  }
+
+  .data > div > p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .data > div {
+    margin-bottom: 15px;
+  }
+
+  .data > div > span {
+    font-size: 13.5px;
+  }
+
+  .data > div > p {
+    font-size: 12.5px;
+  }
+}

@@ -1,0 +1,18 @@
+.main{
+    position: relative;
+}
+
+.navbar{
+    height: 13vh;
+    position: sticky;
+    top: 0;
+    z-index: 1111;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar{
+    height: auto;
+  }
+}

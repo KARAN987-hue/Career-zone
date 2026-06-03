@@ -1,0 +1,39 @@
+.button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  color: var(--text-light);
+  cursor: pointer;
+  margin-left: 8px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+/* Color Variants */
+.orange {
+  background-color: var(--button3-bg);
+}
+
+.blue {
+  background-color: var(--button2-bg);
+}
+
+.green {
+  background-color: #28a745;
+}
+
+.red {
+  background-color: #dc3545;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .button {
+    margin-left: 0;
+    margin-right: 8px;
+    font-size: 13px;
+    padding: 5px 8px;
+  }
+}
+

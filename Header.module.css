@@ -1,0 +1,65 @@
+
+
+.box {
+  width: 100%;
+  max-width: 100vw; /* prevents horizontal overflow */
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box; /* ensures padding is included in width */
+  overflow-x: hidden; /* explicitly hide horizontal overflow */
+}
+
+.tittle {
+  font-weight: 700;
+  line-height: 28px;
+  font-size: 36px;
+  padding-bottom: 10px;
+}
+
+.subTittle {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .box {
+    height: 160px;
+    padding: 0 10px;
+    width: 100%;
+  }
+
+  .tittle {
+    font-size: 28px;
+    line-height: 24px;
+  }
+
+  .subTittle {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .box {
+    height: 140px;
+  }
+
+  .tittle {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  .subTittle {
+    font-size: 12px;
+  }
+}
