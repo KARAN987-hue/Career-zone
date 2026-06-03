@@ -1,0 +1,17 @@
+.table {
+    font-family: 'Open Sans', sans-serif;
+    width: 55%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.table:first-child{
+    
+  font-weight: bold;
+  font-size: 15px;
+  color: #000000;
+  line-height: 24px;
+}
+.table>p{
+    margin: 5px;
+}

@@ -1,0 +1,70 @@
+.container {
+  height: 340px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.753), rgba(0, 0, 0, 0.753)),
+    url('./TittleContainerBG.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.422);
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  border-bottom: 4px solid white;
+}
+
+.tittle {
+  font-size: 42px;
+  font-weight: 700;
+
+}
+
+.subTittle {
+  font-size: 25px !important;
+  font-weight: 500 !important;
+  font-family: inherit !important;
+}
+
+.discription {
+  font-weight: 900;
+  font-size: 15px;
+
+}
+
+/* -------- Responsive Styles -------- */
+
+@media (max-width: 768px) {
+  .container {
+    height: auto;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+
+  .tittle {
+    font-size: 32px;
+  }
+
+  .subTittle {
+    font-size: 20px;
+  }
+
+  .discription {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tittle {
+    font-size: 24px;
+  }
+
+  .subTittle {
+    font-size: 18px;
+  }
+
+  .discription {
+    font-size: 13px;
+  }
+}

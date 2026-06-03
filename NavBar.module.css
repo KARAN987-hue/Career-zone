@@ -1,0 +1,184 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+  font-family: 'Open Sans', sans-serif;
+  position: relative;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+.logo>img {
+  height: 30px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.links {
+  display: flex;
+  gap: 25px;
+}
+
+.linkWrapper {
+  position: relative;
+}
+
+.links a {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.hoverBox0,
+.hoverBox1,
+.hoverBox2,
+.hoverBox3,
+.hoverBox4,
+.hoverBox5,
+.hoverBox6 {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  z-index: 1000;
+}
+
+.linkWrapper:hover .hoverBox0,
+.linkWrapper:hover .hoverBox1,
+.linkWrapper:hover .hoverBox2,
+.linkWrapper:hover .hoverBox3,
+.linkWrapper:hover .hoverBox4,
+.linkWrapper:hover .hoverBox5,
+.linkWrapper:hover .hoverBox6 {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Sidebar (Mobile) */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden; 
+  box-sizing: border-box;
+  background-color: #f8f9fa;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  animation: slideIn 0.3s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sidebarItem {
+  font-weight: 600;
+  background: #ffffff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+  padding: 10px;
+}
+
+.sidebarItem:hover {
+  background: #f1f1f1;
+}
+
+.sidebarMainLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdownBox {
+  padding-left: 10px;
+  margin-top: 6px;
+}
+
+.dropdownTitle {
+  margin: 10px 0 5px;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.dropdownList {
+  list-style: none;
+  padding-left: 15px;
+  margin: 5px 0 10px;
+}
+
+.dropdownList li {
+  margin-bottom: 6px;
+  cursor: pointer;
+  color: #333;
+  font-size: 13px;
+  transition: color 0.2s;
+}
+
+.dropdownList li:hover {
+  color: var(--primary-blue-dark, #0056b3);
+}
+
+.closeBtn {
+  text-align: right;
+  font-size: 20px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Responsive Rules */
+@media (max-width: 768px) {
+  .links {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hoverBox0,
+  .hoverBox1,
+  .hoverBox2,
+  .hoverBox3,
+  .hoverBox4,
+  .hoverBox5,
+  .hoverBox6 {
+    display: none !important;
+  }
+}

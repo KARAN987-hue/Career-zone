@@ -1,0 +1,218 @@
+
+.container {
+  display: flex;
+  gap: 30px;
+  padding: 15px;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 5px;
+  background-color: var(--background-white);
+  margin: 15px auto;
+  transition: all 0.5s ease;
+  width: 530px; 
+  max-width: 90%;
+}
+
+.container:hover {
+  box-shadow: 0px 10px 10px -10px black;
+  transform: scale(1.02);
+}
+
+/* Image */
+.container > div > img {
+  width: 120px;
+  height: 110px;
+}
+
+.tittles {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.tittles > h1 {
+  font-size: 20px;
+  /* width: 680px; */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 610px; 
+  display: block;
+}
+
+.tittles > h2 {
+  font-size: 15px;
+  color: var(--text-light);
+  background-color: var(--primary-blue-medium);
+  font-weight: 400;
+  width: fit-content;
+  padding: 2px 8px;
+  border-radius: 3px;
+}
+
+/* Courses */
+.courses {
+  width: 380px;
+}
+
+.courses>div>p{
+  width: 680px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 680px; 
+  display: block;
+}
+
+.address{
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--gray-light) ;
+}
+.coursesP{
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--gray-light) ;
+
+}
+.subCourses{
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--gray-light) ;
+}
+.approvel{
+  font-size: 16px;
+  font-weight: 700;
+  /* color: var(--gray-light) ; */
+}
+
+.courses > h4 {
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+/* ---------- Responsive ---------- */
+/* @media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%; 
+    padding: 15px;
+  }
+
+  .container > div > img {
+    width: 100px;
+    height: 90px;
+  }
+
+  .tittles {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .tittles > h1 {
+    font-size: 16px;
+  }
+
+  .tittles > h2 {
+    font-size: 12px;
+  }
+
+  .courses {
+    width: 100%;
+  }
+
+  .courses > h4 {
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container > div > img {
+    width: 90px;
+    height: 80px;
+  }
+
+  .tittles > h1 {
+    font-size: 15px;
+  }
+
+  .tittles > h2 {
+    font-size: 11px;
+  }
+
+  .courses > h4 {
+    font-size: 12px;
+  }
+}
+ */
+@media (max-width: 768px) {
+  /* Fix for inline style width: 830px from width="lg" */
+  .container {
+    width: 100% !important;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+  .courses {
+    width: 100% !important;
+  }
+
+  /* Make ALL <p> tags wrap normally and responsively */
+  .courses > div > p {
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: unset !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    word-wrap: break-word;
+  }
+
+  /* Title should wrap too */
+  .tittles > h1 {
+    white-space: normal !important;
+    overflow: visible !important;
+    text-overflow: unset !important;
+    max-width: 100% !important;
+    font-size: 16px;
+  }
+
+  .tittles {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .courses > h4[style*="height: 80px"] {
+    height: auto !important;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 480px) {
+  .container > div > img {
+    width: 90px;
+    height: 80px;
+  }
+
+  .tittles > h1 {
+    font-size: 15px;
+  }
+
+  .tittles > h2 {
+    font-size: 11px;
+  }
+
+  .courses > h4[style*="height: 80px"] {
+    font-size: 13px;
+    width: 300px;
+  }
+
+  .courses > div > p {
+    font-size: 13px;
+  }
+}
