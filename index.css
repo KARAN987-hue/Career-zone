@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+
+  /* === Typography === */
+  --text-bold: 800; /* For headings or emphasized text */
+  --text: 500; /* Normal font weight */
+  --text-xs: 0.6rem; /* Extra small text (e.g., captions) */
+  --text-sm: 0.9rem; /* Small text (e.g., labels) */
+  --text-md: 1.2rem; /* Medium text (e.g., paragraphs) */
+  --text-lg: 1.5rem; /* Large text (e.g., section titles) */
+  --text-xl: 2rem; /* Extra large text (e.g., page headers) */
+
+  /* === Border Radius === */
+  --border-radius: 8px; /* Default border radius for buttons/cards */
+  --border-radius-md: 15px; /* Medium curve (e.g., modals, big cards) */
+  --border-radius-lg: 50px; /* Fully rounded (e.g., pill buttons, avatars) */
+
+  /* === Layout === */
+  --header-height: 50px; /* Fixed height for top navigation bar */
+  --header-gap: 20px; /* Gap between header items */
+  --maximum-responsive-width: 2000px; /* Max container width for large screens */
+
+  /* === Primary Theme Colors === ++++++ */
+  --primary-gray: #f6f6f6; /* Main brand color (buttons, links) +++++++ */
+  --primary-green: #868d0d; /* Hover background or soft accent ++++++++++ */
+  --primary-orange: #f36b3b; /* Active/focus state of primary color +++++++ */
+
+  /* ++++ */
+  
+  --primary-blue-dark: #537D5D; 
+  --primary-blue-medium: #73946B; 
+  --primary-blue-light: #9EBC8A;
+
+  --background-blue-dark: #1f4363;
+  --backgroun-black: black;
+
+  --background-white: #ffffff; /* Page background color */
+  --surface-white: #fefefe; /* Card or modal background */
+
+  /* === Accent / Semantic Colors === */
+  --success: #3fa86c; /* Success messages, status badges */
+  --success-light: #dcfce7; /* Background of success alerts */
+  --success-dark: #15803d; /* Borders or icons for success */
+
+  --info: #b4dc7f; /* Info banners, tags */
+  --info-light: #e0f2fe; /* Background of info elements */
+  --info-dark: #7ba740; /* Icons or emphasized info */
+
+  --warning: #b3261e; /* Warning alerts or labels */
+  --warning-light: #fef3c7; /* Background of warning elements */
+  --warning-dark: #991b1b; /* Warning text or borders */
+
+  --error: #d32f2f; /* Errors, danger buttons */
+  --error-light: #fee2e2; /* Error alert backgrounds */
+  --error-dark: #b91c1c; /* Error text or emphasis */
+
+  /* === Neutral Colors === */
+  --text-dark: #1f1f1f; /* Primary text color */
+  --text-light: #ffffff; /* Light text (on dark backgrounds) +++++ */
+  --text-orange: #f36b3b;  /* ++++ */
+  --gray-dark: #3f444a;  /* +++++ */
+  --gray-medium: #333; /* Secondary text or muted icons ++++++++ */
+  --gray-light: gray; /* Input borders, dividers */
+  --background-gray: #f9f9f9; /* Background for sections/cards */
+  --border-color: #e5e7eb; /* Default border color */
+
+  /* === UI States & Tints === */
+  --hover-green: #1e604d; /* Hover state for primary buttons */
+  --tint-green: #e5f3ef; /* Subtle green backgrounds (e.g., cards) */
+  --disabled-bg: #f3f3f3; /* Disabled input/button background */
+  --disabled-text: #8d969e; /* Disabled text color +++++ */
+
+  /* === Button === ++++ */
+  --button1-bg: rgb(255, 62, 62);
+  --button2-bg: #81b076;
+  --button3-bg: #f4364f;
+  --button-text: #fff;
+
+  --image-logo-bg: white ;
+  --form1-bg: #537D5D75;
+}
+
+[data-theme="dark"] {
+  /* === Backgrounds === */
+  --background-white: #121212; /* Dark page background */
+  --surface-white: #1e1e1e; /* Dark surface (cards/modals) */
+
+  /* === Primary Theme Colors (unchanged or darkened if needed) */
+  --primary-green: #26775c;
+  --primary-green-light: #4da488;
+  --primary-green-dark: #1d5a48;
+
+  /* === Text === */
+  --text-dark: #ffffff; /* Light text on dark background */
+  --text-light: #e0e0e0; /* Subtle light text */
+  --gray-medium: #b0b0b0; /* Muted gray for inputs/text */
+  --gray-light: #2a2a2a; /* Light divider for dark theme */
+
+  /* === Borders & Dividers === */
+  --border-color: #333333; /* Borders on dark surfaces */
+
+  /* === Semantic Colors (lightened where needed for contrast) */
+  --success-light: #2e7d32; /* Dark-mode friendly success bg */
+  --info-light: #8bc34a;
+  --warning-light: #ef9a9a;
+  --error-light: #ef5350;
+
+  /* === UI States & Tints === */
+  --hover-green: #144434; /* Hovered primary on dark */
+  --tint-green: #1c2e2a; /* Subtle background tint */
+  --disabled-bg: #2d2d2d; /* Disabled UI bg in dark mode */
+  --disabled-text: #777777; /* Disabled UI text in dark mode */
+}
+
+/* * {
+  font-family: "Urbanist", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: var(--text-sm);
+  transition: background-color 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+} */
+
+/* html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--info);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--background-white);
+} */
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
